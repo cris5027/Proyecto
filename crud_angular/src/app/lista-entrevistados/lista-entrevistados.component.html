@@ -1,0 +1,53 @@
+<p>lista-entrevistados works!</p>
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<form class = "form-inline">
+<fieldset class ="form-group col-sm-11"></fieldset> 
+<fieldset class="form-group col-sm-1">
+    <a class="btn btn-primary" [routerLink]="[' /entrevista/agregar']">+</a>
+    </fieldset>
+    </form>
+    <br>
+    ><table class ="table table=string">
+        <thead>
+            <tr class="row">
+            <th class="col-sm-2"> id <th>
+            <th class="col-sm-2"> nombre <th>
+            <th class="col-sm-2"> apellido <th>
+            <th class="col-sm-2"> ciudad <th>
+            <th class="col-sm-2"> fecha <th>
+    </tr>
+    <thead>
+    <tbody>
+        <tr *ngFor="Let entrevistado of esntrevistados | async" class="row">
+            <tr class="row">
+            <th class="col-sm-2"><i>{{entrevista.entrevistado}}</i></td> id <th>
+            <th class="col-sm-2"><i>{{entrevista.nombre}}</i></td> id <th></th>
+            <th class="col-sm-4"><i>{{entrevista.apellido}}</i></td> id <th></th>
+            <th class="col-sm-4"><i>{{entrevista.ciudad}}</i></td> id <th></th>
+            <th class="col-sm-2"><i>{{entrevista.fecha}}</i></td> id <th></th>
+            <th class="col-sm-1">
+            <fieldset class="form-group col-sm-1">
+            <a class="btn btn-info" [routerlink]='/esntrevistados/editar', id.id2]">editar</a>">
+            </fieldset>
+            </td>
+            <td class="col-sm-1">
+            <fieldset class="form-group col-sm-1">
+                <a class="btn btn.danger" (click)="borrarentrevistado(id.id2)">borrar</a>
+            </fieldset>
+            </td>
+            </tr>
+            </tbody>
+        </table>
+</div>
+</div>
+</div>
+
+    
+
+
+
+
+
+
